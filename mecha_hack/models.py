@@ -12,7 +12,33 @@ class NewCharacter:
         self.credits     = 0
         self.record      = None
         self.callsign    = None
+        self.modules     = list()
         self.consumables = list()
+    
+    def roll_attributes(self):
+        raise NotImplementedError()
+
+    def swap_attributes(self):
+        raise NotImplementedError()
+    
+    def select_pilot(self):
+        raise NotImplementedError()
+
+    def select_record(self):
+        raise NotImplementedError()
+
+    def select_chassis(self):
+        raise NotImplementedError()
+
+    def select_callsign(self):
+        raise NotImplementedError()
+
+    def select_module(self):
+        raise NotImplementedError()
+
+    def select_starting_gear_or_credits(self):
+        raise NotImplementedError()
+
 
 class Pilot:
     pass
